@@ -2,7 +2,7 @@
 
 1. Run `kubectl apply -k argocd` from the root of this project
 2. Run `kubectl port-forward svc/argocd-server -n argocd 8080:80` and then go to [http://localhost:8080]()
-3. Add the `git@github.com:mkue/argocd-example.git` repository manually in the web interface. 
+3. Add the `git@github.com:eytanhanig/argocd-example.git` repository manually in the web interface. 
 4. Add following application in the Argo CD web interface:
 
 ```yaml
@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: argo-apps
-    repoURL: 'git@github.com:mkue/argocd-example.git'
+    repoURL: 'git@github.com:eytanhanig/argocd-example.git'
     targetRevision: master
     directory:
       recurse: true

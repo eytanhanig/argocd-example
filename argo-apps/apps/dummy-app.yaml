@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:mkue/argocd-example.git
+    repoURL: git@github.com:eytanhanig/argocd-example.git
     path: apps/dummy-app
     targetRevision: master
   destination:
